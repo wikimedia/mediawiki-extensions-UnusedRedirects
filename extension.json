@@ -1,0 +1,29 @@
+{
+	"name": "UnusedRedirects",
+	"version": "1.0",
+	"author": "Jack Phoenix",
+	"license-name": "GPL-2.0+",
+	"url": "https://www.mediawiki.org/wiki/Extension:UnusedRedirects",
+	"description": "[[Special:UnusedRedirects|Lists unused redirects]]",
+	"type": "specialpage",
+	"SpecialPages": {
+		"UnusedRedirects": "UnusedRedirectsPage"
+	},
+	"MessagesDirs": {
+		"UnusedRedirects": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"UnusedRedirectsAlias": "UnusedRedirects.alias.php"
+	},
+	"AutoloadClasses": {
+		"UnusedRedirectsPage": "SpecialUnusedRedirects.php"
+	},
+	"Hooks": {
+		"wgQueryPages": [
+			"UnusedRedirectsPage::onwgQueryPages"
+		]
+	},
+	"manifest_version": 1
+}
