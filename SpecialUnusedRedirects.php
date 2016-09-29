@@ -69,7 +69,7 @@ class UnusedRedirectsPage extends QueryPage {
 					'p2.page_namespace = rd_namespace',
 					'p2.page_title = rd_title' ]
 				],
-				'pagelinks' => [ 'LEFT JOIN', 'pl_title = p1.page_title' ]
+				'pagelinks' => [ 'LEFT JOIN', [ 'pl_title = p1.page_title', 'pl_namespace = p1.page_namespace' ] ]
 			]
 		];
 	}
