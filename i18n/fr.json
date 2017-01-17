@@ -1,8 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jack Phoenix <jack@countervandalism.net>"
+			"Jack Phoenix <jack@countervandalism.net>",
+			"Archaeodontosaurus",
+			"Gomoko"
 		]
 	},
-	"unusedredirects": "Redirections inutilisées"
+	"unusedredirects": "Redirections inutilisées",
+	"unusedredirects-desc": "[[Special:UnusedRedirects|Liste les redirections inutilisées]]",
+	"unusedredirects-text": ""
 }

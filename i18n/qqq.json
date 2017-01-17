@@ -1,8 +1,10 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Liuxinyu970226"
+		]
 	},
 	"unusedredirects": "{{doc-special|UnusedRedirects}}",
 	"unusedredirects-desc": "{{desc|name=UnusedRedirects|url=https://www.mediawiki.org/wiki/Extension:UnusedRedirects}}",
-	"unusedredirects-text": ""
+	"unusedredirects-text": "{{notranslate}}"
 }
