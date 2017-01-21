@@ -7,5 +7,6 @@
 		]
 	},
 	"unusedredirects": "Redirections inutilisées",
-	"unusedredirects-desc": "[[Special:UnusedRedirects|Liste les redirections inutilisées]]"
+	"unusedredirects-desc": "[[Special:UnusedRedirects|Liste les redirections inutilisées]]",
+	"unusedredirects-text": ""
 }

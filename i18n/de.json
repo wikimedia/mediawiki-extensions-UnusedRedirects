@@ -5,5 +5,6 @@
 		]
 	},
 	"unusedredirects": "Nicht verwendete Weiterleitungen",
-	"unusedredirects-desc": "[[Special:UnusedRedirects|Listet nicht verwendete Weiterleitungen auf]]"
+	"unusedredirects-desc": "[[Special:UnusedRedirects|Listet nicht verwendete Weiterleitungen auf]]",
+	"unusedredirects-text": ""
 }
