@@ -6,19 +6,19 @@
  * @ingroup Extensions
  */
 
-$aliases = array();
+$specialPageAliases = array();
 
 /** English */
-$aliases['en'] = array(
+$specialPageAliases['en'] = array(
 	'UnusedRedirects' => array( 'UnusedRedirects' ),
 );
 
 /** Finnish (suomi) */
-$aliases['fi'] = array(
+$specialPageAliases['fi'] = array(
 	'UnusedRedirects' => array( 'Käyttämättömät ohjaukset' ),
 );
 
 /** French (français) */
-$aliases['fr'] = array(
+$specialPageAliases['fr'] = array(
 	'UnusedRedirects' => array( 'Redirections_inutilisées', 'RedirectionsInutilisées', 'Redirections_inutilisees', 'RedirectionsInutilisees', 'Redirections_non_utilisées', 'RedirectionsNonUtilisées', 'Redirections_non_utilisees', 'RedirectionsNonUtilisees' ),
 );
