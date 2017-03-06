@@ -4,5 +4,6 @@
 			"Red Winged Duck"
 		]
 	},
-	"unusedredirects": "Перанакіраваньні, якія не выкарыстоўваюцца"
+	"unusedredirects": "Перанакіраваньні, якія не выкарыстоўваюцца",
+	"unusedredirects-desc": "[[Special:UnusedRedirects|Сьпіс перанакіраваньняў, якія не выкарыстоўваюцца]]"
 }
