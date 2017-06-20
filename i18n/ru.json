@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kareyac"
+			"Kareyac",
+			"Facenapalm"
 		]
 	},
-	"unusedredirects": "Неиспользуемые редиректы"
+	"unusedredirects": "Неиспользуемые редиректы",
+	"unusedredirects-desc": "[[Special:UnusedRedirects|Список неиспользуемых перенаправлений]]"
 }
