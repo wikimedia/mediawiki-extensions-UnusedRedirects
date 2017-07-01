@@ -22,3 +22,8 @@ $specialPageAliases['fi'] = array(
 $specialPageAliases['fr'] = array(
 	'UnusedRedirects' => array( 'Redirections_inutilisées', 'RedirectionsInutilisées', 'Redirections_inutilisees', 'RedirectionsInutilisees', 'Redirections_non_utilisées', 'RedirectionsNonUtilisées', 'Redirections_non_utilisees', 'RedirectionsNonUtilisees' ),
 );
+
+/** Spanish (español) */
+$specialPageAliases['es'] = array(
+	'UnusedRedirects' => array( 'Redirecciones_sin_uso' ),
+);
