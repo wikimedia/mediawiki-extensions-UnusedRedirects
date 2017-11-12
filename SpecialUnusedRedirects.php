@@ -20,7 +20,7 @@
  *
  * @file
  * @ingroup SpecialPage
- * @author Jack Phoenix <jack@countervandalism.net>
+ * @author Jack Phoenix
  * @date 30 August 2016
  * @see https://phabricator.wikimedia.org/T144245
  */
