@@ -6,24 +6,24 @@
  * @ingroup Extensions
  */
 
-$specialPageAliases = array();
+$specialPageAliases = [];
 
 /** English */
-$specialPageAliases['en'] = array(
-	'UnusedRedirects' => array( 'UnusedRedirects' ),
-);
+$specialPageAliases['en'] = [
+	'UnusedRedirects' => [ 'UnusedRedirects' ],
+];
 
 /** Finnish (suomi) */
-$specialPageAliases['fi'] = array(
-	'UnusedRedirects' => array( 'Käyttämättömät ohjaukset' ),
-);
+$specialPageAliases['fi'] = [
+	'UnusedRedirects' => [ 'Käyttämättömät ohjaukset' ],
+];
 
 /** French (français) */
-$specialPageAliases['fr'] = array(
-	'UnusedRedirects' => array( 'Redirections_inutilisées', 'RedirectionsInutilisées', 'Redirections_inutilisees', 'RedirectionsInutilisees', 'Redirections_non_utilisées', 'RedirectionsNonUtilisées', 'Redirections_non_utilisees', 'RedirectionsNonUtilisees' ),
-);
+$specialPageAliases['fr'] = [
+	'UnusedRedirects' => [ 'Redirections_inutilisées', 'RedirectionsInutilisées', 'Redirections_inutilisees', 'RedirectionsInutilisees', 'Redirections_non_utilisées', 'RedirectionsNonUtilisées', 'Redirections_non_utilisees', 'RedirectionsNonUtilisees' ],
+];
 
 /** Spanish (español) */
-$specialPageAliases['es'] = array(
-	'UnusedRedirects' => array( 'Redirecciones_sin_uso' ),
-);
+$specialPageAliases['es'] = [
+	'UnusedRedirects' => [ 'Redirecciones_sin_uso' ],
+];

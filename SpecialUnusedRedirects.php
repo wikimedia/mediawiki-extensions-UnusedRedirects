@@ -182,7 +182,7 @@ class UnusedRedirectsPage extends QueryPage {
 	 * @return bool
 	 */
 	public static function onwgQueryPages( &$queryPages ) {
-		$queryPages[] = array( 'UnusedRedirectsPage' /* class */, 'UnusedRedirects' /* special page name */ );
+		$queryPages[] = [ 'UnusedRedirectsPage' /* class */, 'UnusedRedirects' /* special page name */ ];
 		return true;
 	}
 }
