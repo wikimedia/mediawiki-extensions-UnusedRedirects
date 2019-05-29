@@ -25,6 +25,9 @@
  * @see https://phabricator.wikimedia.org/T144245
  */
 
+use Wikimedia\Rdbms\IDatabase;
+use Wikimedia\Rdbms\IResultWrapper;
+
 /**
  * @ingroup SpecialPage
  */
@@ -82,7 +85,7 @@ class UnusedRedirectsPage extends QueryPage {
 	 * Cache page existence for performance
 	 *
 	 * @param IDatabase $db
-	 * @param ResultWrapper $res
+	 * @param IResultWrapper $res
 	 */
 	function preprocessResults( $db, $res ) {
 		if ( !$res->numRows() ) {
