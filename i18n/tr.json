@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sayginer"
+			"Sayginer",
+			"BaRaN6161 TURK"
 		]
 	},
-	"unusedredirects": "Kullanılmayan yönlendirmeler"
+	"unusedredirects": "Kullanılmayan yönlendirmeler",
+	"unusedredirects-desc": "[[Special:UnusedRedirects|Kullanılmayan yönlendirmeleri listeler]]"
 }
