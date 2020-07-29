@@ -6,6 +6,9 @@
 	"url": "https://www.mediawiki.org/wiki/Extension:UnusedRedirects",
 	"descriptionmsg": "unusedredirects-desc",
 	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.34.0"
+	},
 	"SpecialPages": {
 		"UnusedRedirects": "UnusedRedirectsPage"
 	},
