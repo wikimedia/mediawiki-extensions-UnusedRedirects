@@ -137,9 +137,10 @@ class UnusedRedirectsPage extends QueryPage {
 	 * @return string
 	 */
 	function formatResult( $skin, $result ) {
+		$linkRenderer = $this->getLinkRenderer();
 		# Make a link to the redirect itself
 		$rd_title = Title::makeTitle( $result->namespace, $result->title );
-		$rd_link = Linker::link(
+		$rd_link = $linkRenderer->makeLink(
 			$rd_title,
 			null,
 			[],
@@ -152,7 +153,7 @@ class UnusedRedirectsPage extends QueryPage {
 			# Make a link to the destination page
 			$lang = $this->getLanguage();
 			$arr = $lang->getArrow() . $lang->getDirMark();
-			$targetLink = Linker::link( $target );
+			$targetLink = $linkRenderer->makeLink( $target );
 
 			return "$rd_link $arr $targetLink";
 		} else {
@@ -182,10 +183,8 @@ class UnusedRedirectsPage extends QueryPage {
 	 * allows direct access via the API.
 	 *
 	 * @param array &$queryPages
-	 * @return bool
 	 */
 	public static function onwgQueryPages( &$queryPages ) {
 		$queryPages[] = [ 'UnusedRedirectsPage' /* class */, 'UnusedRedirects' /* special page name */ ];
-		return true;
 	}
 }
