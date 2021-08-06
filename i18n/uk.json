@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"DDPAT",
 			"Piramidion"
 		]
 	},
-	"unusedredirects": "Невикористовувані перенаправлення",
+	"unusedredirects": "Перенаправлення, що не використовуються",
 	"unusedredirects-desc": "[[Special:UnusedRedirects|Перелічує невикористовувані перенаправлення]]"
 }
