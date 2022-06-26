@@ -25,6 +25,7 @@
  * @see https://phabricator.wikimedia.org/T144245
  */
 
+use MediaWiki\MediaWikiServices;
 use Wikimedia\Rdbms\IDatabase;
 use Wikimedia\Rdbms\IResultWrapper;
 
@@ -125,7 +126,12 @@ class UnusedRedirectsPage extends QueryPage {
 			);
 		} else {
 			$title = Title::makeTitle( $row->namespace, $row->title );
-			$article = WikiPage::factory( $title );
+			if ( method_exists( MediaWikiServices::class, 'getWikiPageFactory' ) ) {
+				// MW 1.36+
+				$article = MediaWikiServices::getInstance()->getWikiPageFactory()->newFromTitle( $title );
+			} else {
+				$article = WikiPage::factory( $title );
+			}
 
 			return $article->getRedirectTarget();
 		}
