@@ -93,7 +93,12 @@ class UnusedRedirectsPage extends QueryPage {
 			return;
 		}
 
-		$batch = new LinkBatch;
+		if ( method_exists( MediaWikiServices::class, 'getLinkBatchFactory' ) ) {
+			// MW 1.35+
+			$batch = MediaWikiServices::getInstance()->getLinkBatchFactory()->newLinkBatch();
+		} else {
+			$batch = new LinkBatch;
+		}
 		foreach ( $res as $row ) {
 			$batch->add( $row->namespace, $row->title );
 			$batch->addObj( $this->getRedirectTarget( $row ) );
