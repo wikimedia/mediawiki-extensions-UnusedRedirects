@@ -33,18 +33,21 @@ use Wikimedia\Rdbms\IResultWrapper;
  * @ingroup SpecialPage
  */
 class UnusedRedirectsPage extends QueryPage {
-	function __construct( $name = 'UnusedRedirects' ) {
+	function __construct( string $name = 'UnusedRedirects' ) {
 		parent::__construct( $name );
 	}
 
+	/** @inheritDoc */
 	public function isExpensive() {
 		return true;
 	}
 
+	/** @inheritDoc */
 	function getPageHeader() {
 		return $this->msg( 'unusedredirects-text' )->parseAsBlock();
 	}
 
+	/** @inheritDoc */
 	public function getQueryInfo() {
 		return [
 			'tables' => [
@@ -78,6 +81,7 @@ class UnusedRedirectsPage extends QueryPage {
 		];
 	}
 
+	/** @inheritDoc */
 	function getOrderFields() {
 		return [ 'p1.page_namespace', 'p1.page_title' ];
 	}

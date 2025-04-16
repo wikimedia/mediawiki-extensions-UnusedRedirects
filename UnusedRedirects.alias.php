@@ -20,7 +20,16 @@ $specialPageAliases['fi'] = [
 
 /** French (français) */
 $specialPageAliases['fr'] = [
-	'UnusedRedirects' => [ 'Redirections_inutilisées', 'RedirectionsInutilisées', 'Redirections_inutilisees', 'RedirectionsInutilisees', 'Redirections_non_utilisées', 'RedirectionsNonUtilisées', 'Redirections_non_utilisees', 'RedirectionsNonUtilisees' ],
+	'UnusedRedirects' => [
+		'Redirections_inutilisées',
+		'RedirectionsInutilisées',
+		'Redirections_inutilisees',
+		'RedirectionsInutilisees',
+		'Redirections_non_utilisées',
+		'RedirectionsNonUtilisées',
+		'Redirections_non_utilisees',
+		'RedirectionsNonUtilisees'
+	],
 ];
 
 /** Spanish (español) */
