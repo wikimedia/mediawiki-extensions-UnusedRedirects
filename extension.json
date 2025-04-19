@@ -1,13 +1,13 @@
 {
 	"name": "UnusedRedirects",
-	"version": "1.5",
+	"version": "1.6",
 	"author": "Jack Phoenix",
 	"license-name": "GPL-2.0-or-later",
 	"url": "https://www.mediawiki.org/wiki/Extension:UnusedRedirects",
 	"descriptionmsg": "unusedredirects-desc",
 	"type": "specialpage",
 	"requires": {
-		"MediaWiki": ">= 1.34.0"
+		"MediaWiki": ">= 1.43.0"
 	},
 	"SpecialPages": {
 		"UnusedRedirects": "UnusedRedirectsPage"
@@ -26,5 +26,5 @@
 	"Hooks": {
 		"wgQueryPages": "UnusedRedirectsPage::onwgQueryPages"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

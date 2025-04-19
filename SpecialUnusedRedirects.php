@@ -54,7 +54,8 @@ class UnusedRedirectsPage extends QueryPage {
 				'p1' => 'page',
 				'redirect',
 				'p2' => 'page',
-				'pagelinks',
+				'linktarget',
+				'pagelinks'
 			],
 			'fields' => [
 				'namespace' => 'p1.page_namespace',
@@ -76,7 +77,8 @@ class UnusedRedirectsPage extends QueryPage {
 					'p2.page_namespace = rd_namespace',
 					'p2.page_title = rd_title' ]
 				],
-				'pagelinks' => [ 'LEFT JOIN', [ 'pl_title = p1.page_title', 'pl_namespace = p1.page_namespace' ] ]
+				'pagelinks' => [ 'LEFT JOIN', [ 'pl_target_id = lt_id', 'pl_from_namespace = p1.page_namespace' ] ],
+				'linktarget' => [ 'LEFT JOIN', [ 'lt_title= p1.page_title', 'lt_namespace = p1.page_namespace' ] ]
 			]
 		];
 	}
@@ -97,12 +99,7 @@ class UnusedRedirectsPage extends QueryPage {
 			return;
 		}
 
-		if ( method_exists( MediaWikiServices::class, 'getLinkBatchFactory' ) ) {
-			// MW 1.35+
-			$batch = MediaWikiServices::getInstance()->getLinkBatchFactory()->newLinkBatch();
-		} else {
-			$batch = new LinkBatch;
-		}
+		$batch = MediaWikiServices::getInstance()->getLinkBatchFactory()->newLinkBatch();
 		foreach ( $res as $row ) {
 			$batch->add( $row->namespace, $row->title );
 			$batch->addObj( $this->getRedirectTarget( $row ) );
@@ -135,12 +132,7 @@ class UnusedRedirectsPage extends QueryPage {
 			);
 		} else {
 			$title = Title::makeTitle( $row->namespace, $row->title );
-			if ( method_exists( MediaWikiServices::class, 'getWikiPageFactory' ) ) {
-				// MW 1.36+
-				$article = MediaWikiServices::getInstance()->getWikiPageFactory()->newFromTitle( $title );
-			} else {
-				$article = WikiPage::factory( $title );
-			}
+			$article = MediaWikiServices::getInstance()->getWikiPageFactory()->newFromTitle( $title );
 
 			return $article->getRedirectTarget();
 		}
