@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mainframe98"
+			"Mainframe98",
+			"Siebrand"
 		]
 	},
 	"unusedredirects": "Weesdoorverwijzingen",
-	"unusedredirects-desc": "[[Special:UnusedRedirects|Toon weesdoorverwijzingen]]"
+	"unusedredirects-desc": "[[Special:UnusedRedirects|Weesdoorverwijzingen weergeven]]"
 }
